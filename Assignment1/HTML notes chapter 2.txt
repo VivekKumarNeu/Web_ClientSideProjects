@@ -1,0 +1,6 @@
+Links
+
+link is specified using <a>.
+		eg::
+		<p> Return to the <a href=”index.html” title="what is the title">home page </a> . </p>
+

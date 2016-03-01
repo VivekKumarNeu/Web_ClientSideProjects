@@ -1,0 +1,315 @@
+************
+<html>
+	<head>
+		<title>
+		</title>
+	</head>
+
+	<body>
+
+	</body>
+</html>
+
+
+
+********if you want to open a <a> reference into a new page, use target 
+
+< a href=”http://www.Google.com” target=”_blank” >
+
+
+*********
+
+All the attributes has two parts : 1 ) name    2) values    ;;  seperated by an equal sign
+
+
+*********
+HTML - Hypertext markup language
+XHTML - Extensible Hypertext markup language
+
+*********
+**The six levels of headings: < h1 > , < h2 > , < h3 > , < h4 > , < h5 > , and < h6 >
+**Paragraphs < p > , preformatted sections < pre > , line breaks < br / > , and addresses < address >
+**Presentational elements: < b > , < i > , < u > , < s > , < tt > , < sup > , < sub > , < strike > , < big > , < small > and < hr / >
+**Phrase elements such as < em > , < strong > , < abbr > , < acronym > , < dfn > , < blockquote > , < q > ,
+< cite > , < code > , < kbd > , < var > , < samp > , and < address >
+**Lists such as unordered lists using < ul > and < li > , ordered lists using < ol > and < li > , and
+definition lists using < dl > , < dt > , and < dd >
+**Editing elements such as < ins > and < del >
+**Grouping elements: < div > and < span >
+
+<pre>   </pre>   	;;  the code / text will be same as they are kept.
+
+**************
+<h1 align=”left” > Left-Aligned Heading < /h1 >
+
+**************
+< b > , < i > , < u > , < s > , and < tt > elements
+< sup > , < sub > , < big > , < small > , and < hr / >
+<em>
+
+**************
+<code>  ;; when writing huge lines as code style.
+<kbd>   ;;  same as <code> , but just for a word or two
+<var>   ;; <code>+<pre>       behaves likes both , italic font
+<samp>  ;; indicated sample output from a program
+**************
+Lists
+
+i) Unordered list
+ii) Ordered list
+iii) Definition list
+
+
+
+1. Unoredered list  -- points will be shown in bullet fonts.t 
+
+	< ul >
+		< li type="circle"> Bullet point number one < /li >
+		< li > Bullet point number two < /li >
+		< li > Bullet point number three < /li >
+	< /ul >
+
+
+2. Ordered list  --  Shows the list points in an order related to ( A,1,i).
+
+	< ol type=”A” start=”4”>
+		< li > Point number one < /li >
+		< li > Point number two < /li >
+		< li > Point number three < /li >
+	< /ol >
+
+3. Definition list -- makes a list using <dl>,<dt> and <dd>
+
+	< dl >
+		< dt > Unordered List < /dt >
+		< dd > A list of bullet points. < /dd >
+		< dt > Ordered List < /dt >
+		< dd > An ordered list of points, such as a numbered set of steps. < /dd >
+		< dt > Definition List < /dt >
+		< dd > A list of terms and definitions. < /dd >
+	< /dl >
+
+
+4. Nested list  -- Can organise different kind of list inside a list
+
+
+
+******************
+
+Editing Text
+
+1. <ins>  ;; used for underlining the text/sentence
+2. <del>  ;; used for striking/crossing any text / sentence
+
+Things that can be used with above two ::
+a) <cite>  ;; usually set with url
+b) <title> ;; used to set title 	// not used much
+c) <datetime>  ;; set date and time in format   datetime="2015-05-14T20:30 - 05:00"      ""YYYY-MM-DDThh:mm:ssTZD""
+
+********************
+
+How to write a special character in html
+
+Those characters are known as "Character Entity".
+
+"   -->   &quot;
+&   -->   &amp;
+<   -->   &lt;
+>   -->   &gt;
+
+*********************
+
+comments
+<!-- COMMENT SECTION -->
+
+comments are not printed on the webpage, they can just be seen in the html code.
+
+*********************
+FONT
+
+use to set font in html. Not used much as things are now taken care by css.
+
+<font face=”arial, verdana, sans-serif” size=”2” color=”#666666”> The
+& lt;font & gt; element has been deprecated since HTML 4.0. You should now use
+CSS to indicate how text should be styled. </font>
+
+*********************
+
+Block and Inline elements
+
+Inside <body>, all the elements reside in two category --
+
+i) Block - level elements
+	< p > , < h1 > , < h2 > , < h3 > , < h4 > , < h5 > , < h6 > , < ul > , < ol > , < dl > , < pre > , < hr / > ,
+< blockquote > , and < address > elements are all block - level elements. They all start on their own new
+lines, and anything that follows them appears on its own new line, too.
+
+ii) Inline elements 
+	< b > , < i > , < u > , < em > , < strong > , < sup > , < sub > , < big > , < small > , < ins > , < del > ,
+< code > , < cite > , < dfn > , < kbd > , and < var > elements are all inline elements.
+
+**********************
+
+Grouping elements
+
+i) Div element : Its used to group block level elements.
+			
+			< div class=”footnotes” >
+			< h2 > Footnotes < /h2 >
+			< p > <b>2</b> The W3C is the World Wide Web Consortium which maintains many
+			Web standards < /p >
+			< /div >
+
+ii) Span element : Its used to group inline level elements.if you had a part
+of a sentence or paragraph you wanted to group, you could use the < span > element.
+
+
+		div class=”footnotes” >
+		< h2 > Footnotes < /h2 >
+		< p > < span class=”inventor” > < b > 1 < /b > The World Wide Web was invented by Tim
+		Berners-Lee < /span > < /p >
+		</div>
+
+******************
+Document type decleration :: xhtml should be written in lowercase
+
+When XHTML was created, there where three versions of XHTML released:
+
+i) Translational XHTML : conversion from html to xhtml. 
+
+< !DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN”
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd” >
+
+ii) Strict XHTML 1.0 :  A Transitional DOCTYPE may be used when you have a lot of legacy markup that cannot easily be converted to comply with a Strict DOCTYPE. But Strict is what you should be aiming for. It encourages, and in some cases enforces, the separation of structure and presentation, moving the presentational aspects from markup to CSS. 
+
+< !DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd” >
+
+iii) Frameset xhtml : use to create webpages using frames
+
+< !DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Frameset//EN”
+“http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd” >
+
+****************
+
+Core elements and attributes
+
+Basic structure of every html document ::   <html>,<head,<title>,<body>
+
+
+HTML
+
+If you are writing Strict XHTML 1.0, the opening tag must also include something known as a namespace
+identifier .Namespaces help clarify which element belongs to which language.
+
+e.g : clothing company can set namespaces like <small>,<medium>,<Large> element for sizes.
+
+
+HEAD
+
+<Head> element is a container for all other header elements. It is the first thing to appear after the <html>.
+Each head element should contain a <title> element. Even it can contain these things ::
+
+i) <base> : The <base> element specifies the base URL and base target for all relative URLs in a page. Means, no need to write code for a new page , once you do, it is applicable for all the <href>.
+
+				<title>Page Title</title>
+				<base href="http://www.w3schools.com/images/" target="_blank">
+				<body>
+				<p><a href="http://www.w3schools.com">W3Schools</a>
+				</body>
+				</html>
+
+ii) <object> : which is designed to include images, JavaScript objects, Flash animations, MP3 files,
+QuickTime movies, and other types of files in a page.
+
+iii) <link> : to link to an external file, such as a style sheet or JavaScript file.
+
+iv) <style> : to include CSS rules inside the document.
+
+v) <script> : for including script in the document.
+
+vi) <meta> : which includes information about the document such as keywords and a description,
+which are particularly helpful for search applications.
+
+
+TITLE
+
+use to keep a name for heading. It's also child of <head>.
+
+BODY
+
+It contains the part of the web page that you actually see in the main browser window, which is sometimes referred to as
+body content . The <body> element may carry all of the attributes from the attribute groups.
+
+******************
+
+ATTRIBUTE GROUPS
+
+Attributes live on the opening tag of an element and provide extra information about
+the element that carries them.
+
+There are three groups of attributes ::
+
+i) Core attributes : class, id , title, style
+ii) Internationalization attribute : dir, lang and xml: lang attribute
+iii) UI Events : Attributes associated with events such as onclick , ondoubleclick , onmousedown , onmouseup , onmouseover , onmousemove , onmouseout , onkeypress , onkeydown , and onkeyup.
+
+Together Core and Internationalization attributes are known as universal attributes.
+
+1. Core attributes ::
+
+	a) Id : its used to uniquely identify any element within a page.So that you can link any specific part in the document.
+
+	** can't start a document with a number, hypen , etc
+	** much remain unique within the whole document
+
+	Earlier "name" attrivute was used for HTML document. Now "Id" attribute is used. If someone want to still use, it is present in transitional XHTML but not available in strict HTML.
+
+	b) Class attribute ::
+	
+		It is used to show that an element belongs to a class of element.
+		Syntax : 
+					class = "Classname"
+				or
+					class = "Classname1 Classname2 Classname3" 
+
+		e.g :: <p class=”summary”> Summary goes here </p>
+
+	c) Title attribute ::
+
+		gives title to a page
+		Syntax :
+				title = "string"
+
+	d) Style attribute ::
+
+	It is used to specify the css rules within the element.
+
+	DONT USE THIS ATTRIBUTE. Do the settings via css.
+
+2. INTERNATIONALIZATION :: helps in writing pages for different languages and character sets.
+
+	a) Dir attribute : The dir attribute allows you to indicate to the browser the direction in which the text should flow; 
+						left to right or right to left.
+
+			Used in <html> tag. Why ? Because : i) better support in browser  ii) Can be even applied for header element too.
+
+			ltr ---  left to right ( default) 
+			rtl ---  right to left
+	
+	b) Lang attribute : Use to set the main language in the document. It's been replace by xml : lang attribute in new XHTML.
+
+			Real benefit is in  search engine, screen readers, application ( where different language is needed).
+			The values of the lang attribute are ISO - 639 standard two - character language codes.
+			e.g :: ar : arabic
+				   en : english
+				   en-us : U.S. English
+				   zh : Chinese
+
+	c) xml lang attribute : Replacement for lang attribute (above one).
+
+3. UI EVENTS :: associates with an event; such as key press, mouse move.
+
+		There are 10 common events.
+
+		<body> and <frameset> having elements :: onload and onunload

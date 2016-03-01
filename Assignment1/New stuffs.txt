@@ -1,0 +1,4 @@
+** In earlier versions of HTML, a version attribute could be used to indicate which
+version of HTML the document is written in, although it is usually left off.
+XHTML documents should use the DOCTYPE declaration along with the xmlns
+attribute to indicate which version of XHTML they use.
