@@ -1,0 +1,17 @@
+table{
+	
+	border:solid;
+	padding: 2px;
+
+}
+.even{
+	padding: 1px;
+background-color: gray;
+
+
+}
+.firstRow{
+	padding: 1px;
+color:white;
+
+}

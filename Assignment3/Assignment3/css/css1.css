@@ -1,0 +1,34 @@
+.intro {
+    background-color: yellow;
+}
+a:active {
+    background-color: green;
+}
+a:hover { 
+    background-color: darkseagreen;
+}
+a:link { 
+    background-color: floralwhite;
+}
+a:visited {
+    color: pink;
+}
+#firstname {
+    background-color: red;
+}
+p {
+	background-color: yellow;
+}
+h1, p {
+	background-color: pink;
+}
+div p{
+	background-color: green;
+}
+p::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+}
+p::first-line { 
+    background-color: cyan;
+}

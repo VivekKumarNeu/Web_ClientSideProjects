@@ -1,0 +1,36 @@
+* {
+    background-color: gainsboro;
+}
+div > p { 
+    background-color: green;
+}
+div + p { 
+    background-color: blue;
+}
+a[target] {
+    background-color: yellow;
+}
+a[target=_blank] { 
+    background-color: red;
+}
+[title~=website] {
+    border: 10px solid LightCoral;
+}
+[lang|=en] {
+    background: LightCyan;
+}
+p::after { 
+    content: " - Text is been set with after selector";
+}
+p::before { 
+    content: "Start ---> ";
+}
+p:first-child { 
+    background-color: Moccasin;
+}
+input:focus {
+    background-color: yellow;
+}
+p:lang(Hi) { 
+    background: OldLace;
+}

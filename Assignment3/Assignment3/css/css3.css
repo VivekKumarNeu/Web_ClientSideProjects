@@ -1,0 +1,93 @@
+p ~ ul {
+    background: YellowGreen;
+}
+p[class^="findandset"] {
+    background: #ffff00;
+}
+div[class$="theend"] {
+    background: orchid;
+}
+div[class*="contain"] {
+    background: Linen;
+}
+input:checked {
+    height: 30px;
+    width: 30px;
+}
+input[type="text"]:disabled {
+    background: LightSkyBlue;
+}
+input[type="text"]:enabled {
+    background: WhiteSmoke;
+}
+p:empty {
+    width: 500px;
+    background: fuchsia;    
+}
+p:first-of-type {
+    background: WhiteSmoke;
+}
+input:in-range {
+    border: 2px solid SlateGrey;
+}
+input:invalid {
+    border: 2px solid red;
+}
+h1:last-child {
+    background: #ff0000;
+}
+div:last-of-type {
+    background: green;
+}
+:not(p) {
+    color: #ff0000;
+}p:nth-child(3) {
+    background: Thistle;
+}
+p:nth-last-child(3) {
+    background: blue;
+}
+p:nth-last-of-type(3) {
+    background: Snow;
+}
+h1:nth-of-type(2) {
+    background: Wheat;
+}
+p:only-of-type {
+    background: Salmon;
+}
+p:only-child {
+    border: 2px solid OliveDrab;
+}
+input:optional {
+    background-color: yellow;
+}
+input:out-of-range {
+    border: 2px solid red;
+}
+input:read-only {
+    background-color: orange;
+}
+input:read-write { 
+    border: 2px solid blue;
+}
+input:required {
+    background-color: yellow;
+}
+:root {
+    background: PaleGoldenRod;
+}
+::selection {
+    color: red; 
+    background: yellow;
+}
+:target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+}
+input:valid {
+    	border: solid LightPink;
+}
+a:visited {
+    color: green;
+}
